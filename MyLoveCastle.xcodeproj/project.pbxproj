@@ -10,7 +10,6 @@
 		1A032F931F56510500DCB572 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A032F921F56510500DCB572 /* main.m */; };
 		1A032F961F56510500DCB572 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A032F951F56510500DCB572 /* AppDelegate.m */; };
 		1A032F9E1F56510500DCB572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A032F9D1F56510500DCB572 /* Assets.xcassets */; };
-		1A032FA11F56510500DCB572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A032F9F1F56510500DCB572 /* LaunchScreen.storyboard */; };
 		1A032FAC1F56510500DCB572 /* MyLoveCastleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A032FAB1F56510500DCB572 /* MyLoveCastleTests.m */; };
 		1A032FB71F56510500DCB572 /* MyLoveCastleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A032FB61F56510500DCB572 /* MyLoveCastleUITests.m */; };
 		1A25FE7A1F56551F006EEFD7 /* AppDelegate+Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FE411F56551F006EEFD7 /* AppDelegate+Service.m */; };
@@ -29,6 +28,7 @@
 		1A25FE871F56551F006EEFD7 /* ZYViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FE791F56551F006EEFD7 /* ZYViewTool.m */; };
 		1A25FE8B1F565618006EEFD7 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A25FE8A1F565618006EEFD7 /* libsqlite3.0.tbd */; };
 		1A25FE8E1F565CFD006EEFD7 /* ZYMain_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FE8D1F565CFD006EEFD7 /* ZYMain_VC.m */; };
+		1A5AF8421F566D9A00F64E5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5AF8411F566D9A00F64E5F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,6 @@
 		1A032F941F56510500DCB572 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MyLoveCastle/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		1A032F951F56510500DCB572 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MyLoveCastle/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		1A032F9D1F56510500DCB572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A032FA01F56510500DCB572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A032FA21F56510500DCB572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A032FA71F56510500DCB572 /* MyLoveCastleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLoveCastleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A032FAB1F56510500DCB572 /* MyLoveCastleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLoveCastleTests.m; sourceTree = "<group>"; };
@@ -98,6 +97,7 @@
 		1A25FE8A1F565618006EEFD7 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		1A25FE8C1F565CFD006EEFD7 /* ZYMain_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMain_VC.h; sourceTree = "<group>"; };
 		1A25FE8D1F565CFD006EEFD7 /* ZYMain_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMain_VC.m; sourceTree = "<group>"; };
+		1A5AF8411F566D9A00F64E5F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +159,7 @@
 				1A25FE511F56551F006EEFD7 /* ThirdParty */,
 				1A25FE521F56551F006EEFD7 /* Utils */,
 				1A032F9D1F56510500DCB572 /* Assets.xcassets */,
-				1A032F9F1F56510500DCB572 /* LaunchScreen.storyboard */,
+				1A5AF8411F566D9A00F64E5F /* LaunchScreen.storyboard */,
 				1A032FA21F56510500DCB572 /* Info.plist */,
 				1A032F911F56510500DCB572 /* Supporting Files */,
 			);
@@ -232,6 +232,7 @@
 		1A25FE491F56551F006EEFD7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1A5AF84F1F56768200F64E5F /* Launch */,
 				1A25FE4A1F56551F006EEFD7 /* Home */,
 			);
 			path = Modules;
@@ -289,6 +290,8 @@
 		1A25FE501F56551F006EEFD7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1A5AF84D1F56748100F64E5F /* icon */,
+				1A5AF84E1F56748100F64E5F /* launch_Img */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -445,6 +448,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1A5AF84D1F56748100F64E5F /* icon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		1A5AF84E1F56748100F64E5F /* launch_Img */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = launch_Img;
+			sourceTree = "<group>";
+		};
+		1A5AF84F1F56768200F64E5F /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -554,7 +578,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A032FA11F56510500DCB572 /* LaunchScreen.storyboard in Resources */,
+				1A5AF8421F566D9A00F64E5F /* LaunchScreen.storyboard in Resources */,
 				1A032F9E1F56510500DCB572 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,17 +654,6 @@
 			targetProxy = 1A032FB31F56510500DCB572 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1A032F9F1F56510500DCB572 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A032FA01F56510500DCB572 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1A032FB91F56510500DCB572 /* Debug */ = {
@@ -740,7 +753,7 @@
 				INFOPLIST_FILE = MyLoveCastle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZyZI.MyLocation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZyZI.MyNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -754,7 +767,7 @@
 				INFOPLIST_FILE = MyLoveCastle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZyZI.MyLocation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZyZI.MyNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

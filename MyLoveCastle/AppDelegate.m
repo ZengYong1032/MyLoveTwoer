@@ -15,8 +15,14 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     // Override point for customization after application launch.
+    
+    _window = [[UIWindow alloc] initWithFrame:kScreen_Bounds];
+    [_window makeKeyAndVisible];
+    [_window setRootViewController:[ZYMain_VC new]];
+    
     return YES;
 }
 
