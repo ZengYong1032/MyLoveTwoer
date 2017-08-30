@@ -21,7 +21,7 @@
     
     _window = [[UIWindow alloc] initWithFrame:kScreen_Bounds];
     [_window makeKeyAndVisible];
-    [_window setRootViewController:[ZYMain_VC new]];
+    [_window setRootViewController:[ZYLaunch_VC new]];
     
     return YES;
 }

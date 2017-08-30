@@ -17,5 +17,6 @@
 
 //VC
 #import "ZYMain_VC.h"
+#import "ZYLaunch_VC.h"
 
 #endif /* MyLoveCastle_PrefixHeader_pch */

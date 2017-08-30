@@ -29,6 +29,12 @@
 		1A25FE8B1F565618006EEFD7 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A25FE8A1F565618006EEFD7 /* libsqlite3.0.tbd */; };
 		1A25FE8E1F565CFD006EEFD7 /* ZYMain_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A25FE8D1F565CFD006EEFD7 /* ZYMain_VC.m */; };
 		1A5AF8421F566D9A00F64E5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5AF8411F566D9A00F64E5F /* LaunchScreen.storyboard */; };
+		1A5AF8521F5676E900F64E5F /* ZYLaunch_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5AF8511F5676E900F64E5F /* ZYLaunch_VC.m */; };
+		1A5AF8571F567BC800F64E5F /* launch2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5AF8541F567BC800F64E5F /* launch2.png */; };
+		1A5AF8581F567BC800F64E5F /* launch1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5AF8551F567BC800F64E5F /* launch1.png */; };
+		1A5AF85A1F567BD900F64E5F /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5AF8591F567BD900F64E5F /* launch.png */; };
+		1A5AF85E1F5683E500F64E5F /* launch3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5AF85D1F5683E500F64E5F /* launch3.png */; };
+		1A5AF8671F5688CF00F64E5F /* ZYTabBar_C.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5AF8661F5688CF00F64E5F /* ZYTabBar_C.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +104,14 @@
 		1A25FE8C1F565CFD006EEFD7 /* ZYMain_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMain_VC.h; sourceTree = "<group>"; };
 		1A25FE8D1F565CFD006EEFD7 /* ZYMain_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMain_VC.m; sourceTree = "<group>"; };
 		1A5AF8411F566D9A00F64E5F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A5AF8501F5676E900F64E5F /* ZYLaunch_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLaunch_VC.h; sourceTree = "<group>"; };
+		1A5AF8511F5676E900F64E5F /* ZYLaunch_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLaunch_VC.m; sourceTree = "<group>"; };
+		1A5AF8541F567BC800F64E5F /* launch2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch2.png; sourceTree = "<group>"; };
+		1A5AF8551F567BC800F64E5F /* launch1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch1.png; sourceTree = "<group>"; };
+		1A5AF8591F567BD900F64E5F /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		1A5AF85D1F5683E500F64E5F /* launch3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch3.png; sourceTree = "<group>"; };
+		1A5AF8651F5688CF00F64E5F /* ZYTabBar_C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTabBar_C.h; sourceTree = "<group>"; };
+		1A5AF8661F5688CF00F64E5F /* ZYTabBar_C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabBar_C.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,7 +247,12 @@
 			isa = PBXGroup;
 			children = (
 				1A5AF84F1F56768200F64E5F /* Launch */,
+				1A5AF8611F56886100F64E5F /* Tab */,
 				1A25FE4A1F56551F006EEFD7 /* Home */,
+				1A5AF8681F568E1D00F64E5F /* Anniversary */,
+				1A5AF86E1F568E1D00F64E5F /* ChattingRecords */,
+				1A5AF8741F568E1D00F64E5F /* DreamDirection */,
+				1A5AF87A1F568E1D00F64E5F /* JourneyOfBothHeart */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -458,6 +477,10 @@
 		1A5AF84E1F56748100F64E5F /* launch_Img */ = {
 			isa = PBXGroup;
 			children = (
+				1A5AF85D1F5683E500F64E5F /* launch3.png */,
+				1A5AF8591F567BD900F64E5F /* launch.png */,
+				1A5AF8541F567BC800F64E5F /* launch2.png */,
+				1A5AF8551F567BC800F64E5F /* launch1.png */,
 			);
 			path = launch_Img;
 			sourceTree = "<group>";
@@ -465,8 +488,231 @@
 		1A5AF84F1F56768200F64E5F /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				1A5AF8501F5676E900F64E5F /* ZYLaunch_VC.h */,
+				1A5AF8511F5676E900F64E5F /* ZYLaunch_VC.m */,
 			);
 			path = Launch;
+			sourceTree = "<group>";
+		};
+		1A5AF8611F56886100F64E5F /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				1A5AF8651F5688CF00F64E5F /* ZYTabBar_C.h */,
+				1A5AF8661F5688CF00F64E5F /* ZYTabBar_C.m */,
+				1A5AF8621F56886100F64E5F /* Model */,
+				1A5AF8631F56886100F64E5F /* Resource */,
+				1A5AF8641F56886100F64E5F /* Service */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		1A5AF8621F56886100F64E5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A5AF8631F56886100F64E5F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1A5AF8641F56886100F64E5F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1A5AF8681F568E1D00F64E5F /* Anniversary */ = {
+			isa = PBXGroup;
+			children = (
+				1A5AF8691F568E1D00F64E5F /* Controller */,
+				1A5AF86A1F568E1D00F64E5F /* Model */,
+				1A5AF86B1F568E1D00F64E5F /* Resource */,
+				1A5AF86C1F568E1D00F64E5F /* Service */,
+				1A5AF86D1F568E1D00F64E5F /* View */,
+			);
+			path = Anniversary;
+			sourceTree = "<group>";
+		};
+		1A5AF8691F568E1D00F64E5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A5AF86A1F568E1D00F64E5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A5AF86B1F568E1D00F64E5F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1A5AF86C1F568E1D00F64E5F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1A5AF86D1F568E1D00F64E5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A5AF86E1F568E1D00F64E5F /* ChattingRecords */ = {
+			isa = PBXGroup;
+			children = (
+				1A5AF86F1F568E1D00F64E5F /* Controller */,
+				1A5AF8701F568E1D00F64E5F /* Model */,
+				1A5AF8711F568E1D00F64E5F /* Resource */,
+				1A5AF8721F568E1D00F64E5F /* Service */,
+				1A5AF8731F568E1D00F64E5F /* View */,
+			);
+			path = ChattingRecords;
+			sourceTree = "<group>";
+		};
+		1A5AF86F1F568E1D00F64E5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A5AF8701F568E1D00F64E5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A5AF8711F568E1D00F64E5F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1A5AF8721F568E1D00F64E5F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1A5AF8731F568E1D00F64E5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A5AF8741F568E1D00F64E5F /* DreamDirection */ = {
+			isa = PBXGroup;
+			children = (
+				1A5AF8751F568E1D00F64E5F /* Controller */,
+				1A5AF8761F568E1D00F64E5F /* Model */,
+				1A5AF8771F568E1D00F64E5F /* Resource */,
+				1A5AF8781F568E1D00F64E5F /* Service */,
+				1A5AF8791F568E1D00F64E5F /* View */,
+			);
+			path = DreamDirection;
+			sourceTree = "<group>";
+		};
+		1A5AF8751F568E1D00F64E5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A5AF8761F568E1D00F64E5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A5AF8771F568E1D00F64E5F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1A5AF8781F568E1D00F64E5F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1A5AF8791F568E1D00F64E5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A5AF87A1F568E1D00F64E5F /* JourneyOfBothHeart */ = {
+			isa = PBXGroup;
+			children = (
+				1A5AF87B1F568E1D00F64E5F /* Controller */,
+				1A5AF87C1F568E1D00F64E5F /* Model */,
+				1A5AF87D1F568E1D00F64E5F /* Resource */,
+				1A5AF87E1F568E1D00F64E5F /* Service */,
+				1A5AF87F1F568E1D00F64E5F /* View */,
+			);
+			path = JourneyOfBothHeart;
+			sourceTree = "<group>";
+		};
+		1A5AF87B1F568E1D00F64E5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A5AF87C1F568E1D00F64E5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A5AF87D1F568E1D00F64E5F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1A5AF87E1F568E1D00F64E5F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1A5AF87F1F568E1D00F64E5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,6 +777,7 @@
 		1A032F861F56510500DCB572 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZY;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = ZyZl;
 				TargetAttributes = {
@@ -578,8 +825,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5AF85A1F567BD900F64E5F /* launch.png in Resources */,
 				1A5AF8421F566D9A00F64E5F /* LaunchScreen.storyboard in Resources */,
 				1A032F9E1F56510500DCB572 /* Assets.xcassets in Resources */,
+				1A5AF8571F567BC800F64E5F /* launch2.png in Resources */,
+				1A5AF85E1F5683E500F64E5F /* launch3.png in Resources */,
+				1A5AF8581F567BC800F64E5F /* launch1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,7 +861,9 @@
 				1A032F961F56510500DCB572 /* AppDelegate.m in Sources */,
 				1A25FE871F56551F006EEFD7 /* ZYViewTool.m in Sources */,
 				1A032F931F56510500DCB572 /* main.m in Sources */,
+				1A5AF8521F5676E900F64E5F /* ZYLaunch_VC.m in Sources */,
 				1A25FE801F56551F006EEFD7 /* ZYCustomBase_VC.m in Sources */,
+				1A5AF8671F5688CF00F64E5F /* ZYTabBar_C.m in Sources */,
 				1A25FE7F1F56551F006EEFD7 /* ZYBase_VC.m in Sources */,
 				1A25FE811F56551F006EEFD7 /* ZYDataFilter.m in Sources */,
 				1A25FE7C1F56551F006EEFD7 /* ZYCustomControls.m in Sources */,
