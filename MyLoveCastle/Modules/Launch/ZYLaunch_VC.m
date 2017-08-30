@@ -22,7 +22,8 @@
 {
     if (!_skipButton)
     {
-        _skipButton = [ZYCustomControls createButtonWithFrame:CGRectMake(kScreen_X(0.5) - 60.0, kScreenHeight - 70.0, 120.0, 30.0) type:UIButtonTypeCustom title:@"Start" textFont:16 titleColor:kOrangeColor borderWidth:kButtonBorderWidth borderColor:kBorderColor cornerRadius:kButtonCorneRadius bgColor:kClearColor bgImage:nil highImage:nil tag:0];
+        _skipButton = [ZYCustomControls createButtonWithFrame:CGRectMake(kScreen_X(0.5) - 60.0, kScreenHeight - 90.0, 120.0, 30.0) type:UIButtonTypeCustom title:@"Start" textFont:16 titleColor:kOrangeColor borderWidth:kButtonBorderWidth borderColor:kBorderColor cornerRadius:kButtonCorneRadius bgColor:kClearColor bgImage:nil highImage:nil tag:0];
+        _skipButton.userInteractionEnabled = YES;
         [_skipButton addTarget:self action:@selector(skipToTabVC) forControlEvents:UIControlEventTouchUpInside];
     }
     return _skipButton;
@@ -59,6 +60,7 @@
                 
                 if (i == 3)
                 {
+                    launchImg.userInteractionEnabled = YES;
                     [launchImg addSubview:self.skipButton];
                 }
             }
@@ -109,7 +111,7 @@
 
 -(void)skipToTabVC
 {
-    
+    [kAppDelegate.window setRootViewController:[ZYTabBar_C new]];
 }
 
 - (void)didReceiveMemoryWarning

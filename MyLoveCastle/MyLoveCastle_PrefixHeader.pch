@@ -15,8 +15,18 @@
 //Tool
 #import "Preprocessing_Header.h"
 
+//TabBarC
+#import "ZYTabBar_C.h"
+
 //VC
 #import "ZYMain_VC.h"
 #import "ZYLaunch_VC.h"
+#import "ZYAnniversary_VC.h"
+#import "ZYChattingRecords_VC.h"
+#import "ZYDreamDirection_VC.h"
+#import "ZYHeartJourney_VC.h"
+
+//Model
+#import "ZYPrettyTimeImg_Cell.h"
 
 #endif /* MyLoveCastle_PrefixHeader_pch */
