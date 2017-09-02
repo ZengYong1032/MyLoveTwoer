@@ -18,6 +18,15 @@
 //TabBarC
 #import "ZYTabBar_C.h"
 
+//Model
+#import "ZYPrettyTimeImg_Cell.h"
+#import "ZYPretyTimeHeadView_Model.h"
+#import "ZYPicDetail_Model.h"
+#import "ZYPicCollectionViewCell_Model.h"
+#import "ZYLogInfo_Model.h"
+#import "ZYPersonalView_Model.h"
+
+
 //VC
 #import "ZYMain_VC.h"
 #import "ZYLaunch_VC.h"
@@ -25,8 +34,8 @@
 #import "ZYChattingRecords_VC.h"
 #import "ZYDreamDirection_VC.h"
 #import "ZYHeartJourney_VC.h"
-
-//Model
-#import "ZYPrettyTimeImg_Cell.h"
+#import "ZYPicDetail_VC.h"
+#import "ZYPicInfo_VC.h"
+#import "ZYLogDetail_VC.h"
 
 #endif /* MyLoveCastle_PrefixHeader_pch */

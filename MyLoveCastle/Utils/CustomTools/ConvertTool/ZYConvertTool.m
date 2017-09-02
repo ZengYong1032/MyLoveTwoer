@@ -87,4 +87,20 @@
     return attributeString;
 }
 
++(NSMutableAttributedString *)stringConvertToAttributeString:(NSString *)string fontSize:(NSInteger)fontsize kernSzie:(NSInteger)ksize tcolor:(UIColor *)tcolor firstHeadIndent:(NSInteger)indent isHaveunderLine:(BOOL)isHaving isZapFont:(BOOL)isZap
+{
+    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:string];
+    if (indent > 0)
+    {
+        NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
+        paragraphStyle.lineSpacing = 1.0;
+        paragraphStyle.paragraphSpacing = 1.0;
+        paragraphStyle.firstLineHeadIndent = indent;
+        [attributeString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, attributeString.length)];
+    }
+
+    [attributeString addAttributes:isHaving ? @{NSFontAttributeName:(isZap ? [UIFont fontWithName:@"Zapfino" size:fontsize] : SYSTEMFONT(fontsize)),NSKernAttributeName:@(ksize),NSUnderlineStyleAttributeName:@(NSUnderlineStyleSingle),NSUnderlineColorAttributeName:kGray2Color,NSForegroundColorAttributeName:tcolor} : @{NSFontAttributeName:(isZap ? [UIFont fontWithName:@"Zapfino" size:fontsize] : SYSTEMFONT(fontsize)),NSKernAttributeName:@(ksize),NSForegroundColorAttributeName:tcolor} range:NSMakeRange(0, attributeString.length)];
+    return attributeString;
+}
+
 @end

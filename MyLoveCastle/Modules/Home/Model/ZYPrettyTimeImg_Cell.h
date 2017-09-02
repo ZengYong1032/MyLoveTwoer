@@ -15,6 +15,11 @@
 @property (weak, nonatomic) IBOutlet UIImageView *thirdImg;
 @property (weak, nonatomic) IBOutlet UIImageView *fourthImg;
 
--(instancetype)initCellWithFirstName:(NSString *)firstStr secondName:(NSString *)secondStr thirdName:(NSString *)thirdStr fourthName:(NSString *)fourthStr;
+@property (nonatomic,strong) NSString *firstImgName;
+@property (nonatomic,strong) NSString *secondImgName;
+@property (nonatomic,strong) NSString *thirdImgName;
+@property (nonatomic,strong) NSString *fourthImgName;
+
+-(instancetype)initCellWithFirstName:(NSString *)firstStr secondName:(NSString *)secondStr thirdName:(NSString *)thirdStr fourthName:(NSString *)fourthStr identifierString:(NSString *)cellId;
 
 @end

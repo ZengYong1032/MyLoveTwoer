@@ -10,16 +10,50 @@
 
 @implementation ZYPrettyTimeImg_Cell
 
--(instancetype)initCellWithFirstName:(NSString *)firstStr secondName:(NSString *)secondStr thirdName:(NSString *)thirdStr fourthName:(NSString *)fourthStr
+-(instancetype)initCellWithFirstName:(NSString *)firstStr secondName:(NSString *)secondStr thirdName:(NSString *)thirdStr fourthName:(NSString *)fourthStr identifierString:(NSString *)cellId
 {
     if (self = [super init])
     {
-        [self.firstImg setImage:[UIImage imageNamed:firstStr]];
-        [self.secondImg setImage:[UIImage imageNamed:secondStr]];
-        [self.thirdImg setImage:[UIImage imageNamed:thirdStr]];
-        [self.fourthImg setImage:[UIImage imageNamed:fourthStr]];
+        _firstImgName = firstStr;
+        _secondImgName = secondStr;
+        _thirdImgName = thirdStr;
+        _fourthImgName = fourthStr;
+        self.restorationIdentifier = cellId;
     }
     return self;
+}
+
+-(instancetype)initWithImgNames:(NSArray *)names identifierString:(NSString *)cellId
+{
+    if (self = [super init])
+    {
+        ;
+    }
+    return self;
+}
+
+-(void)setFirstImgName:(NSString *)firstImgName
+{
+    _firstImgName = firstImgName;
+    [self.firstImg setImage:[UIImage imageNamed:firstImgName]];
+}
+
+-(void)setSecondImgName:(NSString *)secondImgName
+{
+    _secondImgName = secondImgName;
+    [self.secondImg setImage:[UIImage imageNamed:secondImgName]];
+}
+
+-(void)setThirdImgName:(NSString *)thirdImgName
+{
+    _thirdImgName = thirdImgName;
+    [self.thirdImg setImage:[UIImage imageNamed:thirdImgName]];
+}
+
+-(void)setFourthImgName:(NSString *)fourthImgName
+{
+    _fourthImgName = fourthImgName;
+    [self.fourthImg setImage:[UIImage imageNamed:fourthImgName]];
 }
 
 - (void)awakeFromNib

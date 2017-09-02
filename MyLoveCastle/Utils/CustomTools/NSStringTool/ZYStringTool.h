@@ -13,5 +13,6 @@
 //Delete the blank space from string
 +(NSString *)removeSpaceFromString:(NSString *)string;
 +(NSString *)removeWhitespaceAndNewlineCharacterSetFromString:(NSString *)string;
++(CGFloat)computeAttributedStringSizeWithString:(NSMutableAttributedString *)string tvWidth:(CGFloat)width;
 
 @end

@@ -30,6 +30,7 @@
 #define kPurpleColor [UIColor purpleColor]    //purple
 #define kBrownColor [UIColor brownColor]      //brown
 #define kBorderColor kGray2Color
+#define kTabBarTitleColor kCustomColor(243, 161, 239, 1.0)
 #define kCustomGrayColor(WHITE,ALPHA) [[UIColor alloc] initWithWhite:WHITE alpha:ALPHA]
 #define kCustomColor(RED,GREEN,BLUE,ALPHA) [UIColor colorWithRed:(RED/255.f) green:(GREEN/255.f) blue:(BLUE/255.f) alpha:(ALPHA)]
 #define kRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256.0)/255.0 blue:arc4random_uniform(256.0)/255.0 alpha:arc4random_uniform(256.0)/255.0]//随机色

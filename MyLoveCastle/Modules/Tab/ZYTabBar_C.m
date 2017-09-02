@@ -49,8 +49,9 @@
     
     [self setViewControllers:@[ftnc,hjnc,crnc,ddnc,anc]];
     
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor grayColor],NSForegroundColorAttributeName, [UIFont fontWithName:@"Helvetica"size:12.0f],NSFontAttributeName,nil] forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:kOrangeColor,NSFontAttributeName:[UIFont fontWithName:@"Helvetica" size:12.0f]} forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor grayColor],NSForegroundColorAttributeName, [UIFont fontWithName:@"Courier-Oblique"size:12.0f],NSFontAttributeName,@(1),NSObliquenessAttributeName,nil] forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:kOrangeColor,NSFontAttributeName:[UIFont fontWithName:@"Courier-Oblique" size:12.0f],NSObliquenessAttributeName :  @(1)} forState:UIControlStateSelected];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:kCustomColor(243, 161, 239, 1.0),NSFontAttributeName:[UIFont fontWithName:@"Zapfino" size:14.0f]}];
 }
 
 - (void)didReceiveMemoryWarning

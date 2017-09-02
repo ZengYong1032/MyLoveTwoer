@@ -206,6 +206,7 @@
     tv.editable = isedit;
     tv.selectable = isselect;
     tv.delegate = vc;
+    tv.scrollEnabled = NO;
     
     return tv;
 }

@@ -43,6 +43,7 @@
 #define kSmallSpace 4.0
 #define kStandardSpace 8.0
 #define kButtonCorneRadius 5.0
+#define kNavgationBarBaseY 20.0
 
 //当前语言
 #define CurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])

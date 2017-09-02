@@ -30,6 +30,7 @@ typedef NS_ENUM(NSInteger,controlType)
 +(NSDate *)getNowDateWithFormat:(dateConvertType)format;
 +(NSDate *)stringContvertToDate:(NSString *)dateStr format:(dateConvertType)format;
 +(NSMutableAttributedString *)stringConvertToAttributeString:(NSString *)string controlType:(controlType)type;
++(NSMutableAttributedString *)stringConvertToAttributeString:(NSString *)string fontSize:(NSInteger)fontsize kernSzie:(NSInteger)ksize tcolor:(UIColor *)tcolor firstHeadIndent:(NSInteger)indent isHaveunderLine:(BOOL)isHaving  isZapFont:(BOOL)isZap;
 +(NSDateFormatter *)setupCustomDateFormatterWithFormat:(dateConvertType)format;
 
 @end
