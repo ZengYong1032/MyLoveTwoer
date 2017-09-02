@@ -92,6 +92,7 @@
 		1A7FBB1A1F594C6A0075C2B8 /* ZYPicCollectionViewCell_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FBB181F594C6A0075C2B8 /* ZYPicCollectionViewCell_Model.m */; };
 		1A7FBB1B1F594C6A0075C2B8 /* ZYPicCollectionViewCell_Model.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A7FBB191F594C6A0075C2B8 /* ZYPicCollectionViewCell_Model.xib */; };
 		1A7FBB1E1F595BC60075C2B8 /* ZYPicInfo_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FBB1D1F595BC60075C2B8 /* ZYPicInfo_VC.m */; };
+		1AA4570B1F5ACFA800382B39 /* ZYWriteAndEditLogs_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4570A1F5ACFA800382B39 /* ZYWriteAndEditLogs_VC.m */; };
 		1ADF4C751F5A82ED00258D2E /* ZYLogDetail_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF4C741F5A82ED00258D2E /* ZYLogDetail_VC.m */; };
 		1ADF4C801F5A899B00258D2E /* ZYPersonalView_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF4C7F1F5A899B00258D2E /* ZYPersonalView_Model.m */; };
 		1ADF4C831F5A970B00258D2E /* ZYLogInfo_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF4C821F5A970B00258D2E /* ZYLogInfo_Model.m */; };
@@ -242,6 +243,8 @@
 		1A7FBB191F594C6A0075C2B8 /* ZYPicCollectionViewCell_Model.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYPicCollectionViewCell_Model.xib; sourceTree = "<group>"; };
 		1A7FBB1C1F595BC60075C2B8 /* ZYPicInfo_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPicInfo_VC.h; sourceTree = "<group>"; };
 		1A7FBB1D1F595BC60075C2B8 /* ZYPicInfo_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPicInfo_VC.m; sourceTree = "<group>"; };
+		1AA457091F5ACFA800382B39 /* ZYWriteAndEditLogs_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYWriteAndEditLogs_VC.h; sourceTree = "<group>"; };
+		1AA4570A1F5ACFA800382B39 /* ZYWriteAndEditLogs_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYWriteAndEditLogs_VC.m; sourceTree = "<group>"; };
 		1ADF4C731F5A82ED00258D2E /* ZYLogDetail_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLogDetail_VC.h; sourceTree = "<group>"; };
 		1ADF4C741F5A82ED00258D2E /* ZYLogDetail_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLogDetail_VC.m; sourceTree = "<group>"; };
 		1ADF4C7E1F5A899B00258D2E /* ZYPersonalView_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPersonalView_Model.h; sourceTree = "<group>"; };
@@ -982,6 +985,8 @@
 				1ADF4C741F5A82ED00258D2E /* ZYLogDetail_VC.m */,
 				1ADF4C841F5AB3C500258D2E /* ZYLogList_VC.h */,
 				1ADF4C851F5AB3C500258D2E /* ZYLogList_VC.m */,
+				1AA457091F5ACFA800382B39 /* ZYWriteAndEditLogs_VC.h */,
+				1AA4570A1F5ACFA800382B39 /* ZYWriteAndEditLogs_VC.m */,
 			);
 			path = SecondaryVC;
 			sourceTree = "<group>";
@@ -1223,6 +1228,7 @@
 				1A7FBB1E1F595BC60075C2B8 /* ZYPicInfo_VC.m in Sources */,
 				1A25FE851F56551F006EEFD7 /* ZYRegisterTool.m in Sources */,
 				1A25FE841F56551F006EEFD7 /* ZYStringTool.m in Sources */,
+				1AA4570B1F5ACFA800382B39 /* ZYWriteAndEditLogs_VC.m in Sources */,
 				1A5AF8821F568EB000F64E5F /* ZYAnniversary_VC.m in Sources */,
 				1A25FE7A1F56551F006EEFD7 /* AppDelegate+Service.m in Sources */,
 				1A5AF8D81F56AD1A00F64E5F /* ZYPrettyTimeImg_Cell.m in Sources */,

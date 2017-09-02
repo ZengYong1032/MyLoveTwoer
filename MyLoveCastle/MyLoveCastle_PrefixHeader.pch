@@ -37,5 +37,6 @@
 #import "ZYPicDetail_VC.h"
 #import "ZYPicInfo_VC.h"
 #import "ZYLogDetail_VC.h"
+#import "ZYLogList_VC.h"
 
 #endif /* MyLoveCastle_PrefixHeader_pch */

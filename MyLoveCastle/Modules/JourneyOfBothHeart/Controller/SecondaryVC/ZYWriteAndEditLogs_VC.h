@@ -1,5 +1,5 @@
 //
-//  ZYLogList_VC.h
+//  ZYWriteAndEditLogs_VC.h
 //  MyLoveCastle
 //
 //  Created by ZyZl on 2017/9/2.
@@ -8,8 +8,6 @@
 
 #import "ZYCustomBase_VC.h"
 
-@interface ZYLogList_VC : ZYCustomBase_VC
-
-@property (nonatomic,strong) NSArray *logsListDataArray;
+@interface ZYWriteAndEditLogs_VC : ZYCustomBase_VC
 
 @end

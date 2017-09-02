@@ -17,9 +17,20 @@
 
 @property (nonatomic,strong) NSMutableDictionary *dataDictionary;
 
+@property (nonatomic,strong) NSArray *logsArray;
+
 @end
 
 @implementation ZYHeartJourney_VC
+
+-(NSArray *)logsArray
+{
+    if (!_logsArray)
+    {
+        _logsArray = [self addLogsData];
+    }
+    return _logsArray;
+}
 
 -(NSMutableDictionary *)dataDictionary
 {
@@ -162,12 +173,16 @@
         irow = indexPath.row + 3;
         
         ZYLogDetail_VC *ldvc = [ZYLogDetail_VC new];
-        ldvc.theLogInfo = [self addLogsData][irow];
+        ldvc.theLogInfo = self.logsArray[irow];
         [self.navigationController pushViewController:ldvc animated:YES];
     }
     else
     {
         irow = indexPath.row;
+        ZYLogList_VC *loglistVC = [ZYLogList_VC new];
+        
+        loglistVC.logsListDataArray = @[self.logsArray[0],self.logsArray[1],self.logsArray[2],self.logsArray[5]];
+        [self.navigationController pushViewController:loglistVC animated:YES];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
