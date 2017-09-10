@@ -12,6 +12,11 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (nonatomic,strong) NSMutableArray *newsLogArray;
+@property (nonatomic,strong) NSMutableArray *logsArray;
+@property (nonatomic,strong) NSMutableArray *oldLogArray;
+
+@property (nonatomic,strong) NSMutableArray *anniDataArray;
 
 @end
 

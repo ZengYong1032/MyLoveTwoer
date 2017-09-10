@@ -29,7 +29,7 @@
         _myPretyTimeTableView.sectionFooterHeight = 0;
         _myPretyTimeTableView.sectionHeaderHeight = 26.0;
         [_myPretyTimeTableView registerNib:[UINib nibWithNibName:@"ZYPrettyTimeImg_Cell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"PrettyTimeCell"];
-        _myPretyTimeTableView.tableHeaderView = [ZYPretyTimeHeadView_Model createPretyTimeHeadViewWithTarget:self frame:CGRectMake(0, 0, kScreenWidth, 184.0) headshots:@[@"o2.png",@"m1.png"] content:@"我也曾见过她爱一个人，为爱抛却羞涩，奋不顾身。也曾似少女般转发些对方看不见的情话和诉求。为对方的话忧心忡忡，彻夜不眠。像极了我爱她的姿态，这时我才明白她爱一个人的真正模样。"];
+        _myPretyTimeTableView.tableHeaderView = [ZYPretyTimeHeadView_Model createPretyTimeHeadViewWithTarget:self frame:CGRectMake(0, 0, kScreenWidth, 184.0) headshots:@[@"host.png",@"hostess.png"] content:@"我也曾见过她爱一个人，为爱抛却羞涩，奋不顾身。也曾似少女般转发些对方看不见的情话和诉求。为对方的话忧心忡忡，彻夜不眠。像极了我爱她的姿态，这时我才明白她爱一个人的真正模样。"];
     }
     return _myPretyTimeTableView;
 }

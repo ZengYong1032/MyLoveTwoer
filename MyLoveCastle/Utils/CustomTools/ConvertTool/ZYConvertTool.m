@@ -87,6 +87,64 @@
     return attributeString;
 }
 
++(NSMutableAttributedString *)sharedTitleAttributedString:(NSString *)string
+{
+    //,NSObliquenessAttributeName:@(1)
+    NSMutableAttributedString *mats = [[NSMutableAttributedString alloc] initWithString:string attributes:@{NSFontAttributeName:[UIFont fontWithName:@"Helvetica-Bold" size:15],NSForegroundColorAttributeName :kBlackColor,NSKernAttributeName:@(0),NSStrokeWidthAttributeName:@(-2),NSStrokeColorAttributeName:kCustomColor(96, 244, 223, 1.0)}];
+    
+    return mats;
+}
+
++(NSMutableAttributedString *)sharedDecriptionAttributedString:(NSString *)string
+{
+    return [[NSMutableAttributedString alloc] initWithString:string attributes:@{NSFontAttributeName:SYSTEMFONT(16),NSForegroundColorAttributeName:kCyanColor}];
+}
+
++(NSString *)getDateDifferenceWithDateString:(NSString *)datestring
+{
+    NSDate *theDate = [self stringContvertToDate:datestring format:ZYDate];
+    NSDate *nowDate = [NSDate date];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init] ;
+    [formatter setDateFormat:@"yyyy"];
+    
+    return NSStringFormat(@"%ld",([[formatter stringFromDate:nowDate] integerValue] - [[formatter stringFromDate:theDate] integerValue] + 1));
+}
+
++(NSMutableDictionary *)getDayDifferenceWithDateString:(NSString *)datestring
+{
+    NSMutableDictionary *results = [NSMutableDictionary dictionary];
+    NSDate *theDate = [self stringContvertToDate:datestring format:ZYDate];
+    NSDate *nowDate = [self getNowDateWithFormat:ZYDate];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init] ;
+    [formatter setDateFormat:@"yyyy"];
+    NSString *nyy = [formatter stringFromDate:nowDate];
+    [formatter setDateFormat:@"MM"];
+    NSString *mm = [formatter stringFromDate:theDate];
+    [formatter setDateFormat:@"dd"];
+    NSString *dd = [formatter stringFromDate:theDate];
+    
+    NSDate *nowtheDate;
+    
+    nowtheDate = [self stringContvertToDate:NSStringFormat(@"%@-%@-%@",nyy,mm,dd) format:ZYDate];
+    
+    if ([nowtheDate timeIntervalSinceDate:nowDate] < 0)
+    {
+        [results setObject:@"YES" forKey:@"isPassing"];
+        nowtheDate = [self stringContvertToDate:NSStringFormat(@"%ld-%@-%@",([nyy integerValue] +1),mm,dd) format:ZYDate];
+        
+    }
+    else
+    {
+        [results setObject:@"NO" forKey:@"isPassing"];
+    }
+    
+    [results setObject:NSStringFormat(@"%.f",([nowtheDate timeIntervalSinceDate:nowDate] / (24 * 60 * 60))) forKey:@"Interval"];
+    
+    return results;
+}
+
 +(NSMutableAttributedString *)stringConvertToAttributeString:(NSString *)string fontSize:(NSInteger)fontsize kernSzie:(NSInteger)ksize tcolor:(UIColor *)tcolor firstHeadIndent:(NSInteger)indent isHaveunderLine:(BOOL)isHaving isZapFont:(BOOL)isZap
 {
     NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:string];

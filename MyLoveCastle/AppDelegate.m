@@ -23,6 +23,11 @@
     [_window makeKeyAndVisible];
     [_window setRootViewController:[ZYLaunch_VC new]];
     
+    self.oldLogArray = [self addLogsDataWithDataType:ZYLogDataTypeOld];
+    self.newsLogArray = [self addLogsDataWithDataType:ZYLogDataTypeNew];
+    self.logsArray = [self addLogsDataWithDataType:ZYLogDataTypeAll];
+    self.anniDataArray = [self setupAnniversaryDataArray];
+    
     return YES;
 }
 

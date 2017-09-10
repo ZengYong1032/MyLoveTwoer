@@ -50,13 +50,13 @@
         {
             UIImageView *launchImg = [[UIImageView alloc] initWithFrame:CGRectMake( i * kScreenWidth,0, kScreenWidth , kScreenHeight)];
             
-            if (i == 0)
+            if (i == 5)
             {
                 launchImgStr = @"launch.png";
             }
             else
             {
-                launchImgStr = NSStringFormat(@"launch%d.png",i);
+                launchImgStr = NSStringFormat(@"launch_%d.png",i);
                 
                 if (i == 3)
                 {

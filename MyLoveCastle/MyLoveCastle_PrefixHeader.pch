@@ -25,6 +25,12 @@
 #import "ZYPicCollectionViewCell_Model.h"
 #import "ZYLogInfo_Model.h"
 #import "ZYPersonalView_Model.h"
+#import "ZYSecretInfo_Model.h"
+#import "ZYSecretCell_Model.h"
+#import "ZYSecretInfoCell_Model.h"
+#import "ZYSecretRightCell_Model.h"
+#import "ZYAnniversary_Model.h"
+#import "ZYAnniRollView_Model.h"
 
 
 //VC
@@ -38,5 +44,8 @@
 #import "ZYPicInfo_VC.h"
 #import "ZYLogDetail_VC.h"
 #import "ZYLogList_VC.h"
+#import "ZYWriteAndEditLogs_VC.h"
+#import "ZYSecretDetail_VC.h"
+#import "ZYAddAndEditAnniversary_VC.h"
 
 #endif /* MyLoveCastle_PrefixHeader_pch */

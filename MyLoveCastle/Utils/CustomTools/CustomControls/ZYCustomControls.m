@@ -203,6 +203,8 @@
 {
     UITextView *tv = [[UITextView alloc] initWithFrame:frame];
     [tv setAttributedText:attributedStrig];
+    tv.layer.borderWidth = 0.5;
+    tv.layer.borderColor = kGray2Color.CGColor;
     tv.editable = isedit;
     tv.selectable = isselect;
     tv.delegate = vc;

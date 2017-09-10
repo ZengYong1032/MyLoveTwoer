@@ -20,7 +20,7 @@
     return [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
-+(CGFloat)computeAttributedStringSizeWithString:(NSMutableAttributedString *)string tvWidth:(CGFloat)width
++(CGFloat)computeAttributedStringSizeWithString:(NSAttributedString *)string tvWidth:(CGFloat)width
 {
     NSRange range = NSMakeRange(0, string.length);
     // 获取该段attributedString的属性字典

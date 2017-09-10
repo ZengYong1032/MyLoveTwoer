@@ -38,12 +38,13 @@
 #define kStatusBarHeight 30.0
 #define kNormSpace 10.0
 #define kBackButtonWidth 40.0
-#define kBackButtonHeight 30.0
+#define kStandardButtonHeight 30.0
 #define kButtonBorderWidth 0.5
 #define kSmallSpace 4.0
 #define kStandardSpace 8.0
 #define kButtonCorneRadius 5.0
 #define kNavgationBarBaseY 20.0
+#define kRightBarItemWidth 80.0
 
 //当前语言
 #define CurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
@@ -71,8 +72,6 @@ do{\
 
 //get Space value
 #define GetSpaceValue(width,count,x) ((kScreenWidth - 2 * x - width * count)/(count - 1))
-#define kStatusBarHeight 30.0
-#define kNormSpace 10.0
 
 //Quick Statement
 #define PropertyString(s) @property (nonatomic,strong) NSString * s

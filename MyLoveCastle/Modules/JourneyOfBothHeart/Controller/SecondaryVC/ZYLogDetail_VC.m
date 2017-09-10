@@ -92,7 +92,7 @@
 {
     if (!_handleButton)
     {
-        _handleButton = [ZYCustomControls createButtonWithFrame:CGRectMake(0, 0, 50.0, 30.0) type:UIButtonTypeCustom title:@"" textFont:0 titleColor:kClearColor borderWidth:kButtonBorderWidth borderColor:kBorderColor cornerRadius:kButtonCorneRadius bgColor:kClearColor bgImage:[UIImage imageNamed:@"handle_n.png"] highImage:[UIImage imageNamed:@"handle_s.png"] tag:0];
+        _handleButton = [ZYCustomControls createButtonWithFrame:CGRectMake(0, 0, 30.0, 30.0) type:UIButtonTypeCustom title:@"" textFont:0 titleColor:kClearColor borderWidth:kButtonBorderWidth borderColor:kBorderColor cornerRadius:kButtonCorneRadius bgColor:kClearColor bgImage:[UIImage imageNamed:@"handle_n.png"] highImage:[UIImage imageNamed:@"handle_s.png"] tag:0];
         [_handleButton addTarget:self action:@selector(skipToPopView) forControlEvents:UIControlEventTouchUpInside];
     }
     return _handleButton;
@@ -143,15 +143,68 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    self.handleButton.userInteractionEnabled = YES;
+    
+    if (indexPath.row == 1)
+    {
+        ZYWriteAndEditLogs_VC *welvc = [ZYWriteAndEditLogs_VC new];
+        welvc.sourceLogInfo = self.theLogInfo;
+        welvc.handleType = ZYHandleTypeModify;
+        
+        [self.navigationController pushViewController:welvc animated:YES];
+    }
+    else if (indexPath.row == 2)
+    {
+        [kAppDelegate.logsArray removeObjectAtIndex:self.theLogInfo.logId];
+        
+        NSArray *array = [NSArray arrayWithArray:kAppDelegate.logsArray];
+        NSInteger i=0;
+        for (ZYLogInfo_Model *info in array)
+        {
+            info.logId = i;
+            [kAppDelegate.logsArray replaceObjectAtIndex:i withObject:info];
+            i++;
+        }
+        
+        if ([self.theLogInfo.typeTag isEqualToString:@"0"])
+        {
+            [kAppDelegate.oldLogArray removeObjectAtIndex:self.theLogInfo.categoryId];
+            NSArray *array = [NSArray arrayWithArray:kAppDelegate.oldLogArray];
+            
+            NSInteger j=0;
+            for (ZYLogInfo_Model *info in array)
+            {
+                info.categoryId = j;
+                [kAppDelegate.oldLogArray replaceObjectAtIndex:j withObject:info];
+                j++;
+            }
+        }
+        else
+        {
+            [kAppDelegate.newsLogArray removeObjectAtIndex:self.theLogInfo.categoryId];
+            NSArray *array = [NSArray arrayWithArray:kAppDelegate.newsLogArray];
+            
+            NSInteger j=0;
+            for (ZYLogInfo_Model *info in array)
+            {
+                info.categoryId = j;
+                [kAppDelegate.newsLogArray replaceObjectAtIndex:j withObject:info];
+                j++;
+            }
+        }
+    }
     
     [UIView animateWithDuration:0.5 animations:^{
     [self dismissViewControllerAnimated:self.contentVC completion:nil];
              }];
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(void)skipToPopView
 {
+    self.handleButton.userInteractionEnabled = NO;
     self.contentVC = [UIViewController new];//初始化内容视图控制器
     self.contentVC.preferredContentSize = CGSizeMake(100, 150);
     self.contentVC.modalPresentationStyle = UIModalPresentationPopover;

@@ -8,6 +8,15 @@
 
 #import "ZYCustomBase_VC.h"
 
+typedef NS_ENUM(NSInteger,ZYHandleType)
+{
+    ZYHandleTypeWrite = 0,
+    ZYHandleTypeModify
+};
+
 @interface ZYWriteAndEditLogs_VC : ZYCustomBase_VC
+
+@property (nonatomic,strong) ZYLogInfo_Model *sourceLogInfo;
+@property (nonatomic,assign) ZYHandleType handleType;
 
 @end

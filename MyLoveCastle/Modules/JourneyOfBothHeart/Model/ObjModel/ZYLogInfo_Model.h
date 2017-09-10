@@ -13,7 +13,11 @@
 @property (nonatomic,strong) NSString *logTitle;
 @property (nonatomic,strong) NSString *nickStr;
 @property (nonatomic,strong) NSString *dateStr;
+@property (nonatomic,strong) NSString *modifyDateStr;
 @property (nonatomic,strong) NSString *headImgName;
-@property (nonatomic,strong) NSMutableAttributedString *contents;
+@property (nonatomic,strong) NSAttributedString *contents;
+@property (nonatomic,strong) NSString *typeTag;
+@property (nonatomic,assign) NSInteger logId;
+@property (nonatomic,assign) NSInteger categoryId;
 
 @end
